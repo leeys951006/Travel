@@ -1,0 +1,111 @@
+/* app/shared-plans/shared-plans.css */
+
+.shared-plans-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.top-ad-space {
+  width: 100%;
+  height: 105px;
+  background-color: #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.middle-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.ad-space {
+  width: 412px;
+  background-color: #f4f4f4;
+  height: 100vh;
+}
+
+.left-ad-space {
+  margin-right: 20px;
+}
+
+.right-ad-space {
+  margin-left: 20px;
+}
+
+.content {
+  max-width: 800px;
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative;
+}
+
+.box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  min-height: 150px;
+  position: relative;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 배경을 반투명하게 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* 다른 콘텐츠 위에 표시되도록 설정 */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.modal-content button:last-child {
+  background-color: #ccc;
+  color: #333;
+}
+
+.modal-content button:last-child:hover {
+  background-color: #aaa;
+}
