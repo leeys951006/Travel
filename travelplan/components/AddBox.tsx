@@ -14,7 +14,11 @@ import EmergencyContactBox from './EmergencyContactBox';
 import BudgetBox from './BudgetBox';
 import SouvenirBox from './SouvenirBox';
 import AllergyBox from './AllergyBox';
-import InsuranceBox from './InsuranceBox';// 여행자보험 컴포넌트 추가
+import InsuranceBox from './InsuranceBox';
+import SimCardBox from './SimCardBox'; // 유심 컴포넌트 추가
+import ExchangeBox from './ExchangeBox';
+import VisaBox from './VisaBox';
+import MedicationBox from './MedicationBox';
 
 export default function AddBox() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -57,8 +61,16 @@ export default function AddBox() {
           <SouvenirBox key={key} onDelete={() => deleteFeature(key)} />
         ) : type === '알레르기' ? (
           <AllergyBox key={key} onDelete={() => deleteFeature(key)} />
-        ) : type === '여행자보험' ? ( // 여행자보험 추가
+        ) : type === '여행자보험' ? (
           <InsuranceBox key={key} onDelete={() => deleteFeature(key)} />
+        ) : type === '유심' ? ( // 유심 추가
+          <SimCardBox key={key} onDelete={() => deleteFeature(key)} />
+        ) : type === '환전' ? (  // 추가된 환전 기능
+          <ExchangeBox key={key} onDelete={() => deleteFeature(key)} />
+        ) : type === '비자' ? (  // 추가된 비자 기능
+          <VisaBox key={key} onDelete={() => deleteFeature(key)} />
+        ): type === '비상약' ? (  // 추가된 비상약 기능
+          <MedicationBox key={key} onDelete={() => deleteFeature(key)} />
         ) : (
           <TransportBox key={key} onDelete={() => deleteFeature(key)} />
         )

@@ -1478,3 +1478,339 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+/* SimCardBox 스타일 */
+.sim-card-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 94.5%; /* 다른 Box 컴포넌트들과 일치 */
+}
+
+/* 엑셀 스타일의 테이블 */
+.sim-card-table {
+  width: 100%;
+  border-collapse: collapse; /* 테이블 셀 간의 경계선 없애기 */
+}
+
+.sim-card-table th,
+.sim-card-table td {
+  padding: 10px;
+  border: 1px solid #ddd; /* 셀 간의 경계선 */
+  text-align: left;
+  position: relative; /* X 버튼 위치 조정을 위해 추가 */
+}
+
+/* 행 삭제 버튼 스타일 (X 버튼) */
+.delete-row-button {
+  position: absolute; /* 비용을 입력하세요 칸의 오른쪽 상단에 위치 */
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-row-button:hover {
+  color: darkred;
+}
+
+/* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-row-button {
+  display: block;
+  margin: 10px auto 0; /* 중앙에 위치 */
+  padding: 0;
+  background: none;
+  color: #0070f3; /* 파란색 텍스트 */
+  border: none;
+  cursor: pointer;
+  font-size: 2rem; /* 버튼 크기 증가 */
+  font-weight: bold; /* 글씨 두께를 추가 */
+  transition: color 0.3s ease;
+}
+
+.add-row-button:hover {
+  color: #005bb5; /* 호버 시 더 진한 파란색 */
+}
+
+.delete-form-button {
+  position: absolute; /* 오른쪽 상단에 위치 */
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete-form-button:hover {
+  color: darkred;
+}
+
+/* ExchangeBox 스타일 */
+.exchange-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 94.5%;
+}
+
+/* 엑셀 스타일의 테이블 */
+.exchange-table {
+  width: 100%;
+  border-collapse: collapse; /* 테이블 셀 간의 경계선 없애기 */
+}
+
+.exchange-table th,
+.exchange-table td {
+  padding: 10px;
+  border: 1px solid #ddd; /* 셀 간의 경계선 */
+  text-align: left;
+  position: relative; /* X 버튼 위치 조정을 위해 추가 */
+}
+
+/* 행 삭제 버튼 스타일 (X 버튼) */
+.delete-row-button {
+  position: absolute; /* 비용을 입력하세요 칸의 오른쪽 상단에 위치 */
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-row-button:hover {
+  color: darkred;
+}
+
+/* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-row-button {
+  display: block;
+  margin: 10px auto 0; /* 중앙에 위치 */
+  padding: 0;
+  background: none; /* 배경색 제거 */
+  color: #0070f3; /* 파란색 텍스트 */
+  border: none;
+  cursor: pointer;
+  font-size: 2rem; /* 버튼 크기 증가 */
+  font-weight: bold; /* 글씨 두께를 추가 */
+  transition: color 0.3s ease;
+}
+
+.add-row-button:hover {
+  color: #005bb5; /* 호버 시 더 진한 파란색 */
+}
+
+.delete-form-button {
+  position: absolute; /* 오른쪽 상단에 위치 */
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete-form-button:hover {
+  color: darkred;
+}
+
+/* VisaBox 스타일 */
+.visa-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 94.5%;
+}
+
+/* 엑셀 스타일의 테이블 */
+.visa-table {
+  width: 100%;
+  border-collapse: collapse; /* 테이블 셀 간의 경계선 없애기 */
+}
+
+.visa-table th,
+.visa-table td {
+  padding: 10px;
+  border: 1px solid #ddd; /* 셀 간의 경계선 */
+  text-align: left;
+  position: relative; /* X 버튼 위치 조정을 위해 추가 */
+}
+
+/* 행 삭제 버튼 스타일 (X 버튼) */
+.delete-row-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-row-button:hover {
+  color: darkred;
+}
+
+/* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-row-button {
+  display: block;
+  margin: 10px auto 0;
+  padding: 0;
+  background: none;
+  color: #0070f3;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.add-row-button:hover {
+  color: #005bb5;
+}
+
+.delete-form-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete-form-button:hover {
+  color: darkred;
+}
+
+/* MedicationBox 스타일 */
+.medication-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 94.5%;
+}
+
+/* 엑셀 스타일의 테이블 */
+.medication-table {
+  width: 100%;
+  border-collapse: collapse; /* 테이블 셀 간의 경계선 없애기 */
+}
+
+.medication-table th,
+.medication-table td {
+  padding: 10px;
+  border: 1px solid #ddd; /* 셀 간의 경계선 */
+  text-align: left;
+  position: relative; /* X 버튼 위치 조정을 위해 추가 */
+}
+
+/* 행 삭제 버튼 스타일 (X 버튼) */
+.delete-row-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-row-button:hover {
+  color: darkred;
+}
+
+/* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-row-button {
+  display: block;
+  margin: 10px auto 0;
+  padding: 0;
+  background: none;
+  color: #0070f3;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.add-row-button:hover {
+  color: #005bb5;
+}
+
+.delete-form-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete-form-button:hover {
+  color: darkred;
+}

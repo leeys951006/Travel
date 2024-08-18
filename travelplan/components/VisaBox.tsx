@@ -1,13 +1,12 @@
-// components/SimCardBox.tsx
 'use client';
 
 import { useState } from 'react';
 
-export default function SimCardBox({ onDelete }: { onDelete: () => void }) {
-  const [rows, setRows] = useState([{ name: '', roamingMethod: '', roamingStatus: 'O' }]);
+export default function VisaBox({ onDelete }: { onDelete: () => void }) {
+  const [rows, setRows] = useState([{ name: '', visaRequired: 'O' }]);
 
   const addRow = () => {
-    setRows([...rows, { name: '', roamingMethod: '', roamingStatus: 'O' }]);
+    setRows([...rows, { name: '', visaRequired: 'O' }]);
   };
 
   const handleInputChange = (index: number, field: string, value: string) => {
@@ -22,14 +21,13 @@ export default function SimCardBox({ onDelete }: { onDelete: () => void }) {
   };
 
   return (
-    <div className="sim-card-box">
-      <h3>유심 정보</h3>
-      <table className="sim-card-table">
+    <div className="visa-box">
+      <h3>비자 정보</h3>
+      <table className="visa-table">
         <thead>
           <tr>
             <th>이름</th>
-            <th>로밍방법</th>
-            <th>로밍 유무</th>
+            <th>비자 유무</th>
           </tr>
         </thead>
         <tbody>
@@ -44,19 +42,10 @@ export default function SimCardBox({ onDelete }: { onDelete: () => void }) {
                 />
               </td>
               <td>
-                <input
-                  type="text"
-                  value={row.roamingMethod}
-                  onChange={(e) => handleInputChange(index, 'roamingMethod', e.target.value)}
-                  placeholder="로밍 방법을 입력하세요"
-                />
-              </td>
-              <td>
-                <label htmlFor={`roamingStatus-${index}`} className="visually-hidden">로밍 유무</label>
                 <select
-                  id={`roamingStatus-${index}`}
-                  value={row.roamingStatus}
-                  onChange={(e) => handleInputChange(index, 'roamingStatus', e.target.value)}
+                  aria-label="비자 유무 선택" 
+                  value={row.visaRequired}
+                  onChange={(e) => handleInputChange(index, 'visaRequired', e.target.value)}
                 >
                   <option value="O">O</option>
                   <option value="X">X</option>

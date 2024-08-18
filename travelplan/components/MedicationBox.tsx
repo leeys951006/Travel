@@ -1,13 +1,12 @@
-// components/SimCardBox.tsx
 'use client';
 
 import { useState } from 'react';
 
-export default function SimCardBox({ onDelete }: { onDelete: () => void }) {
-  const [rows, setRows] = useState([{ name: '', roamingMethod: '', roamingStatus: 'O' }]);
+export default function MedicationBox({ onDelete }: { onDelete: () => void }) {
+  const [rows, setRows] = useState([{ name: '', effect: '' }]);
 
   const addRow = () => {
-    setRows([...rows, { name: '', roamingMethod: '', roamingStatus: 'O' }]);
+    setRows([...rows, { name: '', effect: '' }]);
   };
 
   const handleInputChange = (index: number, field: string, value: string) => {
@@ -22,14 +21,13 @@ export default function SimCardBox({ onDelete }: { onDelete: () => void }) {
   };
 
   return (
-    <div className="sim-card-box">
-      <h3>유심 정보</h3>
-      <table className="sim-card-table">
+    <div className="medication-box">
+      <h3>비상약 정보</h3>
+      <table className="medication-table">
         <thead>
           <tr>
-            <th>이름</th>
-            <th>로밍방법</th>
-            <th>로밍 유무</th>
+            <th>약이름</th>
+            <th>효과</th>
           </tr>
         </thead>
         <tbody>
@@ -40,27 +38,16 @@ export default function SimCardBox({ onDelete }: { onDelete: () => void }) {
                   type="text"
                   value={row.name}
                   onChange={(e) => handleInputChange(index, 'name', e.target.value)}
-                  placeholder="이름을 입력하세요"
+                  placeholder="약이름을 입력하세요"
                 />
               </td>
               <td>
                 <input
                   type="text"
-                  value={row.roamingMethod}
-                  onChange={(e) => handleInputChange(index, 'roamingMethod', e.target.value)}
-                  placeholder="로밍 방법을 입력하세요"
+                  value={row.effect}
+                  onChange={(e) => handleInputChange(index, 'effect', e.target.value)}
+                  placeholder="효과를 입력하세요"
                 />
-              </td>
-              <td>
-                <label htmlFor={`roamingStatus-${index}`} className="visually-hidden">로밍 유무</label>
-                <select
-                  id={`roamingStatus-${index}`}
-                  value={row.roamingStatus}
-                  onChange={(e) => handleInputChange(index, 'roamingStatus', e.target.value)}
-                >
-                  <option value="O">O</option>
-                  <option value="X">X</option>
-                </select>
                 <button className="delete-row-button" onClick={() => deleteRow(index)}>×</button>
               </td>
             </tr>
