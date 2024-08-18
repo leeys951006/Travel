@@ -807,3 +807,674 @@
 .delete-form-button:hover {
   color: darkred;
 }
+
+/* 티켓 폼 스타일 */
+.ticket-form {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 94.5%;
+  overflow-x: auto; /* 표가 div 밖으로 나가지 않도록 스크롤 가능 설정 */
+}
+
+.ticket-table {
+  width: 100%;
+  border-collapse: collapse; /* 테이블 셀 간의 경계선 없애기 */
+}
+
+.ticket-table th,
+.ticket-table td {
+  padding: 10px;
+  border: 1px solid #ddd; /* 셀 간의 경계선 */
+  text-align: left;
+  position: relative;
+}
+
+.ticket-table input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* 행 삭제 버튼 스타일 (X 버튼) */
+.Trdelete-row-button {
+  position: absolute; /* 오른쪽 상단에 위치 */
+  top: -4px;
+  right: 1px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.Trdelete-row-button:hover {
+  color: darkred;
+}
+
+/* 총 합계 표시 스타일 */
+.total-amount {
+  text-align: right;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-row-button {
+  display: block;
+  margin: 10px auto 0; /* 중앙에 위치 */
+  padding: 0; /* 추가적인 패딩 제거 */
+  background: none; /* 배경색 제거 */
+  color: #0070f3; /* 파란색 텍스트 */
+  border: none; /* 테두리 제거 */
+  cursor: pointer;
+  font-size: 2rem; /* 버튼 크기 증가 */
+  font-weight: bold; /* 글씨 두께를 추가 */
+  transition: color 0.3s ease;
+}
+
+.add-row-button:hover {
+  color: #005bb5; /* 호버 시 더 진한 파란색 */
+}
+
+.delete-form-button {
+  position: absolute; /* 오른쪽 상단에 위치 */
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete-form-button:hover {
+  color: darkred;
+}
+
+/* 식당 폼 스타일 */
+.restaurant-form {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 94.5%;
+  overflow-x: auto; /* 표가 div 밖으로 나가지 않도록 스크롤 가능 설정 */
+}
+
+.restaurant-table {
+  width: 100%;
+  border-collapse: collapse; /* 테이블 셀 간의 경계선 없애기 */
+}
+
+.restaurant-table th,
+.restaurant-table td {
+  padding: 10px;
+  border: 1px solid #ddd; /* 셀 간의 경계선 */
+  text-align: left;
+  position: relative;
+}
+
+.restaurant-table input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* 행 삭제 버튼 스타일 (X 버튼) */
+.delete-row-button {
+  position: absolute; /* 오른쪽 상단에 위치 */
+  top: -4px;
+  right: 1px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-row-button:hover {
+  color: darkred;
+}
+
+/* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-row-button {
+  display: block;
+  margin: 10px auto 0; /* 중앙에 위치 */
+  padding: 0; /* 추가적인 패딩 제거 */
+  background: none; /* 배경색 제거 */
+  color: #0070f3; /* 파란색 텍스트 */
+  border: none; /* 테두리 제거 */
+  cursor: pointer;
+  font-size: 2rem; /* 버튼 크기 증가 */
+  font-weight: bold; /* 글씨 두께를 추가 */
+  transition: color 0.3s ease;
+}
+
+.add-row-button:hover {
+  color: #005bb5; /* 호버 시 더 진한 파란색 */
+}
+
+.delete-form-button {
+  position: absolute; /* 오른쪽 상단에 위치 */
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete-form-button:hover {
+  color: darkred;
+}
+
+/* 비상연락처 폼 스타일 */
+.emergency-contact-form {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 94.5%;
+  overflow-x: auto; /* 표가 div 밖으로 나가지 않도록 스크롤 가능 설정 */
+}
+
+.emergency-contact-table {
+  width: 100%;
+  border-collapse: collapse; /* 테이블 셀 간의 경계선 없애기 */
+}
+
+.emergency-contact-table th,
+.emergency-contact-table td {
+  padding: 10px;
+  border: 1px solid #ddd; /* 셀 간의 경계선 */
+  text-align: left;
+  position: relative;
+}
+
+.emergency-contact-table input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* 행 삭제 버튼 스타일 (X 버튼) */
+.delete-row-button {
+  position: absolute; /* 오른쪽 상단에 위치 */
+  top: -4px;
+  right: 1px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-row-button:hover {
+  color: darkred;
+}
+
+/* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-row-button {
+  display: block;
+  margin: 10px auto 0; /* 중앙에 위치 */
+  padding: 0; /* 추가적인 패딩 제거 */
+  background: none; /* 배경색 제거 */
+  color: #0070f3; /* 파란색 텍스트 */
+  border: none; /* 테두리 제거 */
+  cursor: pointer;
+  font-size: 2rem; /* 버튼 크기 증가 */
+  font-weight: bold; /* 글씨 두께를 추가 */
+  transition: color 0.3s ease;
+}
+
+.add-row-button:hover {
+  color: #005bb5; /* 호버 시 더 진한 파란색 */
+}
+
+.delete-form-button {
+  position: absolute; /* 오른쪽 상단에 위치 */
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete-form-button:hover {
+  color: darkred;
+}
+
+/* Budget Box 스타일 */
+.budget-form {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 95%;
+  max-width: 800px;
+}
+
+/* 엑셀 스타일의 테이블 */
+.budget-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.budget-table th,
+.budget-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  position: relative;
+}
+
+.budget-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.budget-table input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-row-button {
+  display: block;
+  margin: 10px auto 0;
+  padding: 0;
+  background: none;
+  color: #0070f3;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.add-row-button:hover {
+  color: #005bb5;
+}
+
+/* 행 삭제 버튼 스타일 */
+.delete-row-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-row-button:hover {
+  color: darkred;
+}
+
+/* 합계 표시 스타일 */
+.total-amount {
+  text-align: right;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Souvenir Box 스타일 */
+.souvenir-form {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 95%;
+  max-width: 800px;
+}
+
+/* 엑셀 스타일의 테이블 */
+.souvenir-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.souvenir-table th,
+.souvenir-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  position: relative;
+}
+
+.souvenir-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.souvenir-table input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-row-button {
+  display: block;
+  margin: 10px auto 0;
+  padding: 0;
+  background: none;
+  color: #0070f3;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.add-row-button:hover {
+  color: #005bb5;
+}
+
+/* 행 삭제 버튼 스타일 */
+.delete-row-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-row-button:hover {
+  color: darkred;
+}
+
+/* 합계 표시 스타일 */
+.total-amount {
+  text-align: right;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* AllergyBox 스타일 */
+.allergy-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  width: 95%;
+  max-width: 800px;
+}
+
+/* 엑셀 스타일의 테이블 */
+.allergy-table {
+  width: 100%;
+  border-collapse: collapse; /* 테이블 셀 간의 경계선 없애기 */
+}
+
+.allergy-table th,
+.allergy-table td {
+  padding: 10px;
+  border: 1px solid #ddd; /* 셀 간의 경계선 */
+  text-align: left;
+  position: relative;
+}
+
+.allergy-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.allergy-table input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* 행 삭제 버튼 스타일 (X 버튼) */
+.delete-row-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-row-button:hover {
+  color: darkred;
+}
+
+/* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-row-button {
+  display: block;
+  margin: 10px auto 0; /* 중앙에 위치 */
+  padding: 0; /* 추가적인 패딩 제거 */
+  background: none; /* 배경색 제거 */
+  color: #0070f3; /* 파란색 텍스트 */
+  border: none; /* 테두리 제거 */
+  cursor: pointer;
+  font-size: 2rem; /* 버튼 크기 증가 */
+  font-weight: bold; /* 글씨 두께를 추가 */
+  transition: color 0.3s ease;
+}
+
+.add-row-button:hover {
+  color: #005bb5; /* 호버 시 더 진한 파란색 */
+}
+
+.delete-form-button {
+  position: absolute; /* 오른쪽 상단에 위치 */
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete-form-button:hover {
+  color: darkred;
+}
+
+/* InsuranceBox 스타일 */
+.insurance-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  width: 95%;
+  max-width: 800px;
+}
+
+/* 엑셀 스타일의 테이블 */
+.insurance-table {
+  width: 100%;
+  border-collapse: collapse; /* 테이블 셀 간의 경계선 없애기 */
+}
+
+.insurance-table th,
+.insurance-table td {
+  padding: 10px;
+  border: 1px solid #ddd; /* 셀 간의 경계선 */
+  text-align: left;
+  position: relative;
+}
+
+.insurance-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.insurance-table input,
+.insurance-table select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* 행 삭제 버튼 스타일 (X 버튼) */
+.delete-row-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.delete-row-button:hover {
+  color: darkred;
+}
+
+/* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-row-button {
+  display: block;
+  margin: 10px auto 0; /* 중앙에 위치 */
+  padding: 0; /* 추가적인 패딩 제거 */
+  background: none; /* 배경색 제거 */
+  color: #0070f3; /* 파란색 텍스트 */
+  border: none; /* 테두리 제거 */
+  cursor: pointer;
+  font-size: 2rem; /* 버튼 크기 증가 */
+  font-weight: bold; /* 글씨 두께를 추가 */
+  transition: color 0.3s ease;
+}
+
+.add-row-button:hover {
+  color: #005bb5; /* 호버 시 더 진한 파란색 */
+}
+
+.delete-form-button {
+  position: absolute; /* 오른쪽 상단에 위치 */
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.delete-form-button:hover {
+  color: darkred;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

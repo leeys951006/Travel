@@ -7,24 +7,31 @@ import TransportBox from './TransportBox';
 import PlaceBox from './PlaceBox';
 import AccommodationBox from './AccommodationBox';
 import LuggageBox from './LuggageBox';
-import ShoppingCartBox from './ShoppingCartBox'; // 새로 추가된 컴포넌트 임포트
+import ShoppingCartBox from './ShoppingCartBox';
+import TicketBox from './TicketBox';
+import RestaurantBox from './RestaurantBox';
+import EmergencyContactBox from './EmergencyContactBox';
+import BudgetBox from './BudgetBox';
+import SouvenirBox from './SouvenirBox';
+import AllergyBox from './AllergyBox';
+import InsuranceBox from './InsuranceBox';// 여행자보험 컴포넌트 추가
 
 export default function AddBox() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [features, setFeatures] = useState<{ type: string; key: number }[]>([]); // 생성된 feature 관리
-  const [featureKey, setFeatureKey] = useState(0); // 각 feature에 고유한 키를 부여
+  const [features, setFeatures] = useState<{ type: string; key: number }[]>([]);
+  const [featureKey, setFeatureKey] = useState(0);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
   const handleFeatureSelect = (feature: string) => {
-    setFeatures([...features, { type: feature, key: featureKey }]); // 새로운 feature 추가
-    setFeatureKey(featureKey + 1); // 키 증가
-    closeModal(); // 모달 닫기
+    setFeatures([...features, { type: feature, key: featureKey }]);
+    setFeatureKey(featureKey + 1);
+    closeModal();
   };
 
   const deleteFeature = (key: number) => {
-    setFeatures(features.filter((feature) => feature.key !== key)); // 특정 feature 삭제
+    setFeatures(features.filter((feature) => feature.key !== key));
   };
 
   return (
@@ -38,6 +45,20 @@ export default function AddBox() {
           <LuggageBox key={key} onDelete={() => deleteFeature(key)} />
         ) : type === '장바구니' ? (
           <ShoppingCartBox key={key} onDelete={() => deleteFeature(key)} />
+        ) : type === '티켓' ? (
+          <TicketBox key={key} onDelete={() => deleteFeature(key)} />
+        ) : type === '식당' ? (
+          <RestaurantBox key={key} onDelete={() => deleteFeature(key)} />
+        ) : type === '비상연락처' ? (
+          <EmergencyContactBox key={key} onDelete={() => deleteFeature(key)} />
+        ) : type === '예산' ? (
+          <BudgetBox key={key} onDelete={() => deleteFeature(key)} />
+        ) : type === '기념품' ? (
+          <SouvenirBox key={key} onDelete={() => deleteFeature(key)} />
+        ) : type === '알레르기' ? (
+          <AllergyBox key={key} onDelete={() => deleteFeature(key)} />
+        ) : type === '여행자보험' ? ( // 여행자보험 추가
+          <InsuranceBox key={key} onDelete={() => deleteFeature(key)} />
         ) : (
           <TransportBox key={key} onDelete={() => deleteFeature(key)} />
         )
