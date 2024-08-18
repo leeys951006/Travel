@@ -93,7 +93,7 @@ export default function AddItemModal({ isOpen, onClose, onAdd }: AddItemModalPro
     <div className="modal">
       <div className="modal-content">
         <button className="close-button" onClick={onClose}>×</button>
-        <h2>항목 추가</h2>
+        <h2>여행 지역,국가 추가</h2>
         <div className="radio-group">
           <label>
             <input

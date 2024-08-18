@@ -27,9 +27,25 @@ body {
 }
 
 .site-nav {
-  background-color: #f4f4f4;
+  background-color: #1B74C7; /* 파란색 배경 */
   padding: 0.5rem 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white; /* 전체 텍스트 색상 흰색 */
+  font-size: 1rem; /* 텍스트 크기 */
+  display: flex; /* 가로로 배치 */
+  justify-content: space-between; /* 양 끝에 배치 */
+  align-items: center; /* 수직 가운데 정렬 */
+}
+
+.site-nav a {
+  color: white; /* 링크 색상 흰색 */
+  text-decoration: none; /* 링크 밑줄 제거 */
+  margin: 0 1rem; /* 링크 간 간격 */
+  transition: color 0.3s ease; /* 마우스 오버 시 전환 효과 */
+}
+
+.site-nav a:hover {
+  color: #ffffffcc; /* 마우스를 올렸을 때 조금 더 밝은 흰색 */
 }
 
 .nav-list {
@@ -43,7 +59,6 @@ body {
 
 .nav-item a {
   text-decoration: none;
-  color: #0070f3;
   font-weight: bold;
   padding: 0.5rem 1rem;
   transition: color 0.3s ease;
