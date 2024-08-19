@@ -71,7 +71,7 @@ export default function SouvenirBox({ onDelete }: { onDelete: () => void }) {
                   onChange={(e) => handleInputChange(index, 'price', e.target.value.replace(/[^0-9]/g, ''))}
                   placeholder="금액을 입력하세요"
                 />
-                <button className="delete-row-button" onClick={() => deleteRow(index)}>×</button>
+                <button className="delete-row-button" onClick={() => deleteRow(index)}>✖︎</button>
               </td>
             </tr>
           ))}
@@ -79,7 +79,7 @@ export default function SouvenirBox({ onDelete }: { onDelete: () => void }) {
       </table>
       <div className="form-actions">
         <button className="add-row-button" onClick={addRow}>+</button>
-        <button className="delete-form-button" onClick={onDelete}>×</button>
+        <button className="delete-form-button" onClick={onDelete}>✖︎</button>
       </div>
       <div className="total-amount">
         합계: {formatPrice(total.toString())}원

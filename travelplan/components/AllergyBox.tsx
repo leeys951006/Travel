@@ -37,7 +37,7 @@ export default function AllergyBox({ onDelete }: { onDelete: () => void }) {
               <td><input type="text" value={row.name} onChange={(e) => handleInputChange(index, 'name', e.target.value)} placeholder="이름을 입력하세요" /></td>
               <td className="caution-cell">
                 <input type="text" value={row.caution} onChange={(e) => handleInputChange(index, 'caution', e.target.value)} placeholder="조심해야 하는 것을 입력하세요" />
-                <button className="delete-row-button" onClick={() => deleteRow(index)}>×</button>
+                <button className="delete-row-button" onClick={() => deleteRow(index)}>✖︎</button>
               </td>
             </tr>
           ))}
@@ -45,7 +45,7 @@ export default function AllergyBox({ onDelete }: { onDelete: () => void }) {
       </table>
       <div className="form-actions">
         <button className="add-row-button" onClick={addRow}>+</button>
-        <button className="delete-form-button" onClick={onDelete}>×</button>
+        <button className="delete-form-button" onClick={onDelete}>✖︎</button>
       </div>
     </div>
   );

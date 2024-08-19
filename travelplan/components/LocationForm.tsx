@@ -39,7 +39,7 @@ export default function LocationForm({ onDelete }: { onDelete: () => void }) {
               <td><input type="text" value={row.address} onChange={(e) => handleInputChange(index, 'address', e.target.value)} placeholder="주소를 입력하세요" /></td>
               <td className="hours-cell">
                 <input type="text" value={row.hours} onChange={(e) => handleInputChange(index, 'hours', e.target.value)} placeholder="운영시간을 입력하세요" />
-                <button className="delete-row-button" onClick={() => deleteRow(index)}>×</button>
+                <button className="delete-row-button" onClick={() => deleteRow(index)}>✖︎</button>
               </td>
             </tr>
           ))}
@@ -47,7 +47,7 @@ export default function LocationForm({ onDelete }: { onDelete: () => void }) {
       </table>
       <div className="form-actions">
         <button className="add-row-button" onClick={addRow}>+</button>
-        <button className="delete-form-button" onClick={onDelete}>×</button>
+        <button className="delete-form-button" onClick={onDelete}>✖︎</button>
       </div>
     </div>
   );

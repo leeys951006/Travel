@@ -43,7 +43,7 @@ export default function AccommodationBox({ onDelete }: { onDelete: () => void })
               <td><input type="text" value={row.checkin} onChange={(e) => handleInputChange(index, 'checkin', e.target.value)} placeholder="체크인 시간을 입력하세요" /></td>
               <td className="hours-cell">
                 <input type="text" value={row.checkout} onChange={(e) => handleInputChange(index, 'checkout', e.target.value)} placeholder="체크아웃 시간을 입력하세요" />
-                <button className="Trdelete-row-button" onClick={() => deleteRow(index)}>×</button>
+                <button className="Trdelete-row-button" onClick={() => deleteRow(index)}>✖︎</button>
               </td>
             </tr>
           ))}
@@ -51,7 +51,7 @@ export default function AccommodationBox({ onDelete }: { onDelete: () => void })
       </table>
       <div className="form-actions">
         <button className="add-row-button" onClick={addRow}>+</button>
-        <button className="delete-form-button" onClick={onDelete}>×</button>
+        <button className="delete-form-button" onClick={onDelete}>✖︎</button>
       </div>
     </div>
   );

@@ -1,4 +1,3 @@
-// app/shared-plans/page.tsx
 'use client';
 
 import './shared-plans.css';
@@ -47,18 +46,25 @@ export default function SharedPlans() {
         <div className="ad-space left-ad-space">{/* 왼쪽 광고 배너 공간 */}</div>
         <div className="content">
           <h1>공유계획 페이지</h1>
-
-          {/* 이메일 목록 */}
+          
           <EmailList emails={emails} onDelete={(email) => setEmailToDelete(email)} />
-          <button className="member-button" onClick={() => setIsModalOpen(true)}>
-            멤버 추가
-          </button>
+
+          {/* 버튼들을 감싸는 컨테이너 */}
+          <div className="button-container">
+            <button className="member-button" onClick={() => setIsModalOpen(true)}>
+              멤버 추가
+            </button>
+            
+          </div>
 
           <ItemList items={items} onDelete={deleteItem} />
-          <button className="location-button" onClick={() => setIsItemModalOpen(true)}>
-            여행 지역,국가 추가
-          </button>
+          <div className="button-container">
 
+          <button className="location-button" onClick={() => setIsItemModalOpen(true)}>
+              항목 추가
+            </button>
+          </div>
+          
           {/* 새로운 AddBox 컴포넌트 */}
           <AddBox />
 

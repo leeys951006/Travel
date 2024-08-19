@@ -1,4 +1,3 @@
-// app/login/page.tsx
 'use client';
 
 import { useState } from 'react';
@@ -23,34 +22,56 @@ export default function LoginPage() {
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', flexDirection: 'column' }}>
-      <h1>로그인</h1>
-      <input
-        type="text"
-        placeholder="아이디"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-        style={{ padding: '10px', marginBottom: '10px', width: '300px' }}
-      />
-      <input
-        type="password"
-        placeholder="비밀번호"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        style={{ padding: '10px', marginBottom: '10px', width: '300px' }}
-      />
-      <button
-        onClick={handleLogin}
-        style={{
-          padding: '10px 20px',
-          backgroundColor: '#0070f3',
-          color: '#fff',
-          border: 'none',
-          borderRadius: '5px',
-          cursor: 'pointer',
-        }}
-      >
-        로그인
-      </button>
+      <div style={{ border: '1px solid #ddd', borderRadius: '8px', padding: '20px', width: '320px', textAlign: 'center', backgroundColor: '#fff' }}>
+        <h1 style={{ marginBottom: '20px' }}>로그인</h1>
+        <input
+          type="text"
+          placeholder="아이디"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          style={{
+            padding: '10px',
+            marginBottom: '10px',
+            width: '100%',
+            border: '1px solid #ddd',
+            borderRadius: '4px',
+            fontSize: '1rem',
+            boxSizing: 'border-box',
+            backgroundColor: '#f9f9f9',
+          }}
+        />
+        <input
+          type="password"
+          placeholder="비밀번호"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          style={{
+            padding: '10px',
+            marginBottom: '20px',
+            width: '100%',
+            border: '1px solid #ddd',
+            borderRadius: '4px',
+            fontSize: '1rem',
+            boxSizing: 'border-box',
+            backgroundColor: '#f9f9f9',
+          }}
+        />
+        <button
+          onClick={handleLogin}
+          style={{
+            width: '100%',
+            padding: '10px',
+            backgroundColor: '#0070f3',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            fontSize: '1rem',
+          }}
+        >
+          로그인
+        </button>
+      </div>
     </div>
   );
 }

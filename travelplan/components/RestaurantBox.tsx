@@ -43,7 +43,7 @@ export default function RestaurantBox({ onDelete }: { onDelete: () => void }) {
               <td><input type="text" value={row.hours} onChange={(e) => handleInputChange(index, 'hours', e.target.value)} placeholder="운영시간을 입력하세요" /></td>
               <td className="breaktime-cell">
                 <input type="text" value={row.breakTime} onChange={(e) => handleInputChange(index, 'breakTime', e.target.value)} placeholder="브레이크 타임을 입력하세요" />
-                <button className="delete-row-button" onClick={() => deleteRow(index)}>×</button>
+                <button className="delete-row-button" onClick={() => deleteRow(index)}>✖︎</button>
               </td>
             </tr>
           ))}
@@ -51,7 +51,7 @@ export default function RestaurantBox({ onDelete }: { onDelete: () => void }) {
       </table>
       <div className="form-actions">
         <button className="add-row-button" onClick={addRow}>+</button>
-        <button className="delete-form-button" onClick={onDelete}>×</button>
+        <button className="delete-form-button" onClick={onDelete}>✖︎</button>
       </div>
     </div>
   );

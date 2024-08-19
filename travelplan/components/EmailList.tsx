@@ -15,7 +15,7 @@ export default function EmailList({ emails, onDelete }: EmailListProps) {
         <div key={email} className="email-item">
           {email}
           <button className="delete-button" onClick={() => onDelete(email)}>
-            X
+          ✖︎
           </button>
         </div>
       ))}

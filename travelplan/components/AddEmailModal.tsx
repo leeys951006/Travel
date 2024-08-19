@@ -1,4 +1,3 @@
-// components/AddEmailModal.tsx
 'use client';
 
 import { useState } from 'react';
@@ -23,17 +22,18 @@ export default function AddEmailModal({ isOpen, onClose, onAdd }: AddEmailModalP
   if (!isOpen) return null; // 모달이 열리지 않았으면 null 반환
 
   return (
-    <div className="modal">
-      <div className="modal-content">
+    <div className="modal1">
+      <div className="modal-content1">
+        <button onClick={onClose} className="close-button">✖︎</button>
         <h2>이메일 추가</h2>
         <input
           type="email"
           value={newEmail}
           onChange={(e) => setNewEmail(e.target.value)}
           placeholder="이메일 입력"
+          className="email-input"
         />
-        <button onClick={handleAddEmail}>등록</button>
-        <button onClick={onClose}>취소</button>
+        <button onClick={handleAddEmail} className="add-button1">등록</button>
       </div>
     </div>
   );
