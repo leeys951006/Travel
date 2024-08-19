@@ -42,13 +42,9 @@ export default function SharedPlans() {
 
   return (
     <div className="shared-plans-container">
-      <div className="top-ad-space">
-        {/* 상단 광고 배너 공간 */}
-      </div>
+      <div className="top-ad-space">{/* 상단 광고 배너 공간 */}</div>
       <div className="middle-content">
-        <div className="ad-space left-ad-space">
-          {/* 왼쪽 광고 배너 공간 */}
-        </div>
+        <div className="ad-space left-ad-space">{/* 왼쪽 광고 배너 공간 */}</div>
         <div className="content">
           <h1>공유계획 페이지</h1>
 
@@ -60,7 +56,7 @@ export default function SharedPlans() {
 
           <ItemList items={items} onDelete={deleteItem} />
           <button className="location-button" onClick={() => setIsItemModalOpen(true)}>
-            항목 추가
+            여행 지역,국가 추가
           </button>
 
           {/* 새로운 AddBox 컴포넌트 */}
@@ -68,20 +64,10 @@ export default function SharedPlans() {
 
           {/* 모달 창 */}
           <AddEmailModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} onAdd={addEmail} />
-          <AddItemModal
-            isOpen={isItemModalOpen}
-            onClose={() => setIsItemModalOpen(false)}
-            onAdd={addItem}
-          />
-          <DeleteConfirmationModal
-            emailToDelete={emailToDelete}
-            onConfirm={deleteEmail}
-            onCancel={() => setEmailToDelete(null)}
-          />
+          <AddItemModal isOpen={isItemModalOpen} onClose={() => setIsItemModalOpen(false)} onAdd={addItem} />
+          <DeleteConfirmationModal emailToDelete={emailToDelete} onConfirm={deleteEmail} onCancel={() => setEmailToDelete(null)} />
         </div>
-        <div className="ad-space right-ad-space">
-          {/* 오른쪽 광고 배너 공간 */}
-        </div>
+        <div className="ad-space right-ad-space">{/* 오른쪽 광고 배너 공간 */}</div>
       </div>
     </div>
   );

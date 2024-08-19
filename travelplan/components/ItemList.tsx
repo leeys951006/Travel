@@ -14,12 +14,14 @@ export default function ItemList({ items, onDelete }: ItemListProps) {
           {items.map((item, index) => (
             <div key={index} className="selected-location-item">
               {item}
-              <button onClick={() => onDelete(item)} className="delete-button">X</button>
+              <button onClick={() => onDelete(item)} className="delete-button">
+                X
+              </button>
             </div>
           ))}
         </div>
       ) : (
-        <p>추가된 항목이 없습니다.</p>
+        <p></p>
       )}
     </div>
   );
