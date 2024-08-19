@@ -88,7 +88,7 @@ export default function TransportBox({ onDelete }: { onDelete: () => void }) {
 
   return (
     <div className="transport-box">
-      <button className="delete-transport-button" onClick={onDelete}>×</button>
+      <button className="delete-transport-button" onClick={onDelete}>✖︎</button>
       {!transportType && (
         <button className="add-transport-button" onClick={openModal}>+</button>
       )}
@@ -135,7 +135,7 @@ export default function TransportBox({ onDelete }: { onDelete: () => void }) {
                           onChange={(e) => handleInputChange(index, 'cost', e.target.value)}
                           placeholder="비용을 입력하세요"
                         />
-                        <button className="Trdelete-row-button" onClick={() => deleteRow(index)}>×</button>
+                        <button className="Trdelete-row-button" onClick={() => deleteRow(index)}>✖︎</button>
                       </td>
                     </>
                   ) : (
@@ -179,7 +179,7 @@ export default function TransportBox({ onDelete }: { onDelete: () => void }) {
                           onChange={(e) => handleInputChange(index, 'cost', e.target.value)}
                           placeholder="비용을 입력하세요"
                         />
-                        <button className="Trdelete-row-button" onClick={() => deleteRow(index)}>×</button>
+                        <button className="Trdelete-row-button" onClick={() => deleteRow(index)}>✖︎</button>
                       </td>
                     </>
                   )}

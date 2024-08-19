@@ -18,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </Link>
               </div>
               <AuthButton />
+              <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet"></link>
             </header>
 
             <nav className="site-nav">

@@ -1,10 +1,11 @@
 /* app/globals.css */
-
+* {font-family: "Noto Sans KR", sans-serif;}
 body {
+  
   background-color: #ffffff;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  
 }
 
 .site-header {
@@ -27,7 +28,7 @@ body {
 }
 
 .site-nav {
-  background-color: #1B74C7; /* 파란색 배경 */
+  background-color: #166BBB;/* 파란색 배경 */
   padding: 0.5rem 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: white; /* 전체 텍스트 색상 흰색 */
@@ -76,17 +77,18 @@ body {
 
 .auth-button {
   background: none;
-  border: 2px solid #0070f3;
-  color: #0070f3;
+  border: 2px solid #166BBB;
+  color: #166BBB;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
+  border-radius: 20px 20px 20px 20px; /* 오른쪽과 왼쪽을 둥글게 설정 */
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .auth-button:hover {
-  background-color: #0070f3;
+  background-color: #166BBB;
   color: #fff;
 }
+
 

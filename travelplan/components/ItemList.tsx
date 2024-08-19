@@ -14,7 +14,7 @@ export default function ItemList({ items, onDelete }: ItemListProps) {
           {items.map((item, index) => (
             <div key={index} className="selected-location-item">
               {item}
-              <button onClick={() => onDelete(item)} className="delete-button">X</button>
+              <button onClick={() => onDelete(item)} className="delete-button">✖︎</button>
             </div>
           ))}
         </div>

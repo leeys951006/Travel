@@ -50,7 +50,7 @@ export default function VisaBox({ onDelete }: { onDelete: () => void }) {
                   <option value="O">O</option>
                   <option value="X">X</option>
                 </select>
-                <button className="delete-row-button" onClick={() => deleteRow(index)}>×</button>
+                <button className="delete-row-button" onClick={() => deleteRow(index)}>✖︎</button>
               </td>
             </tr>
           ))}
@@ -58,7 +58,7 @@ export default function VisaBox({ onDelete }: { onDelete: () => void }) {
       </table>
       <div className="form-actions">
         <button className="add-row-button" onClick={addRow}>+</button>
-        <button className="delete-form-button" onClick={onDelete}>×</button>
+        <button className="delete-form-button" onClick={onDelete}>✖︎</button>
       </div>
     </div>
   );

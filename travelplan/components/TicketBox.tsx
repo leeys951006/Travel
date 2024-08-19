@@ -55,7 +55,7 @@ export default function TicketBox({ onDelete }: { onDelete: () => void }) {
               <td><input type="text" value={row.quantity} onChange={(e) => handleInputChange(index, 'quantity', e.target.value)} placeholder="수량을 입력하세요" /></td>
               <td className="price-cell">
                 <input type="text" value={row.price} onChange={(e) => handleInputChange(index, 'price', e.target.value)} placeholder="가격을 입력하세요" />
-                <button className="Trdelete-row-button" onClick={() => deleteRow(index)}>×</button>
+                <button className="Trdelete-row-button" onClick={() => deleteRow(index)}>✖︎</button>
               </td>
             </tr>
           ))}
@@ -63,7 +63,7 @@ export default function TicketBox({ onDelete }: { onDelete: () => void }) {
       </table>
       <div className="form-actions">
         <button className="add-row-button" onClick={addRow}>+</button>
-        <button className="delete-form-button" onClick={onDelete}>×</button>
+        <button className="delete-form-button" onClick={onDelete}>✖︎</button>
       </div>
       <div className="total-amount">
         합계: {total.toLocaleString()} 원

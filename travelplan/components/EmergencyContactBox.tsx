@@ -39,7 +39,8 @@ export default function EmergencyContactBox({ onDelete }: { onDelete: () => void
               <td><input type="text" value={row.contact1} onChange={(e) => handleInputChange(index, 'contact1', e.target.value)} placeholder="비상연락처1을 입력하세요" /></td>
               <td className="contact-cell">
                 <input type="text" value={row.contact2} onChange={(e) => handleInputChange(index, 'contact2', e.target.value)} placeholder="비상연락처2을 입력하세요" />
-                <button className="delete-row-button" onClick={() => deleteRow(index)}>×</button>
+                <button className="delete-row-button" onClick={() => deleteRow(index)}>✖︎
+                </button>
               </td>
             </tr>
           ))}
@@ -47,7 +48,8 @@ export default function EmergencyContactBox({ onDelete }: { onDelete: () => void
       </table>
       <div className="form-actions">
         <button className="add-row-button" onClick={addRow}>+</button>
-        <button className="delete-form-button" onClick={onDelete}>×</button>
+        <button className="delete-form-button" onClick={onDelete}>✖︎
+        </button>
       </div>
     </div>
   );

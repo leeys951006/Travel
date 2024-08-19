@@ -48,7 +48,7 @@ export default function MedicationBox({ onDelete }: { onDelete: () => void }) {
                   onChange={(e) => handleInputChange(index, 'effect', e.target.value)}
                   placeholder="효과를 입력하세요"
                 />
-                <button className="delete-row-button" onClick={() => deleteRow(index)}>×</button>
+                <button className="delete-row-button" onClick={() => deleteRow(index)}>✖︎</button>
               </td>
             </tr>
           ))}
@@ -56,7 +56,7 @@ export default function MedicationBox({ onDelete }: { onDelete: () => void }) {
       </table>
       <div className="form-actions">
         <button className="add-row-button" onClick={addRow}>+</button>
-        <button className="delete-form-button" onClick={onDelete}>×</button>
+        <button className="delete-form-button" onClick={onDelete}>✖︎</button>
       </div>
     </div>
   );
