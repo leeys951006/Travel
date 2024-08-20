@@ -19,6 +19,7 @@ import SimCardBox from './SimCardBox'; // 유심 컴포넌트 추가
 import ExchangeBox from './ExchangeBox';
 import VisaBox from './VisaBox';
 import MedicationBox from './MedicationBox';
+import MiscellaneousBox from './MiscellaneousBox';
 
 export default function AddBox() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -40,7 +41,7 @@ export default function AddBox() {
 
   return (
     <div className="feature-container">
-      {features.map(({ type, key }) => (
+      {features.map(({ type, key }) =>
         type === '장소' ? (
           <PlaceBox key={key} onDelete={() => deleteFeature(key)} />
         ) : type === '숙소' ? (
@@ -65,19 +66,23 @@ export default function AddBox() {
           <InsuranceBox key={key} onDelete={() => deleteFeature(key)} />
         ) : type === '유심' ? ( // 유심 추가
           <SimCardBox key={key} onDelete={() => deleteFeature(key)} />
-        ) : type === '환전' ? (  // 추가된 환전 기능
+        ) : type === '환전' ? ( // 추가된 환전 기능
           <ExchangeBox key={key} onDelete={() => deleteFeature(key)} />
-        ) : type === '비자' ? (  // 추가된 비자 기능
+        ) : type === '비자' ? ( // 추가된 비자 기능
           <VisaBox key={key} onDelete={() => deleteFeature(key)} />
-        ): type === '비상약' ? (  // 추가된 비상약 기능
+        ) : type === '비상약' ? ( // 추가된 비상약 기능
           <MedicationBox key={key} onDelete={() => deleteFeature(key)} />
+        ) : type === '기타' ? ( // 기타 추가
+          <MiscellaneousBox key={key} onDelete={() => deleteFeature(key)} />
         ) : (
           <TransportBox key={key} onDelete={() => deleteFeature(key)} />
         )
-      ))}
+      )}
 
       <div className="add-box">
-        <button className="add-button" onClick={openModal}>+</button>
+        <button className="add-button" onClick={openModal}>
+          +
+        </button>
         <FeatureSelectionModal isOpen={isModalOpen} onClose={closeModal} onSelect={handleFeatureSelect} />
       </div>
     </div>

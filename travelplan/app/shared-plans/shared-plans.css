@@ -1,5 +1,3 @@
-
-
 /* 전체 컨테이너 */
 .shared-plans-container {
   display: flex;
@@ -53,7 +51,7 @@
 /* 기본 박스 스타일 */
 .box {
   background-color: #ffffff; /* 배경색을 흰색으로 설정 */
-  border: 1px solid #166BBB; /* 테두리 색상을 #166BBB로 설정 */
+  border: 1px solid #166bbb; /* 테두리 색상을 #166BBB로 설정 */
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -62,8 +60,6 @@
   white-space: nowrap; /* 텍스트 한 줄 유지 */
   max-height: 5ch; /* 글자 5개 기준으로 너비 제한 */
 }
-
-
 
 /* 선택된 항목 리스트 (스크롤 가능하도록 수정) */
 .selected-locations {
@@ -82,7 +78,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
 
 .selected-location-item:hover {
   background-color: #f0f0f0;
@@ -154,7 +149,7 @@
 .location-button,
 .member-button {
   padding: 10px 20px;
-  background-color: #166BBB; /* 파란색 배경 */
+  background-color: #166bbb; /* 파란색 배경 */
   color: #fff; /* 흰색 텍스트 */
   border: none;
   border-radius: 4px; /* 모서리를 살짝 둥글게 */
@@ -165,7 +160,6 @@
   margin-bottom: 1vw;
   margin-left: 10px; /* 버튼들 간의 간격을 추가 */
 }
-
 
 .location-button:hover,
 .member-button:hover {
@@ -247,8 +241,6 @@
   background-color: #0056b3;
 }
 
-
-
 .email-input {
   width: 100%;
   padding: 10px;
@@ -275,7 +267,6 @@
 .add-button1:hover {
   background-color: #005bb5;
 }
-
 
 /* 모달 스타일 */
 .modal {
@@ -405,7 +396,7 @@
 .location-form,
 .transport-table {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -413,9 +404,9 @@
   width: 94.5%;
 }
 
-.transport-box{
+.transport-box {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -438,17 +429,17 @@
 .transportation-table th,
 .transportation-table td,
 .transport-table th,
-.transport-table td
- {
+.transport-table td {
   padding: 10px;
   border: 1px solid #ddd;
   text-align: left;
   position: relative;
 }
 
-.location-table th,.transport-table th {
+.location-table th,
+.transport-table th {
   background-color: #227bcf;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   font-weight: bold;
   color: #ffffff;
 }
@@ -460,7 +451,6 @@
   border: 1px solid #ddd;
   box-sizing: border-box;
 }
-
 
 .transport-table input {
   width: 100%;
@@ -477,7 +467,7 @@
   right: 0px;
   background: none;
   border: none;
-  color: #4E4E4E;
+  color: #4e4e4e;
   font-size: 1.2rem;
   cursor: pointer;
   padding: 0;
@@ -489,7 +479,7 @@
   right: 1px;
   background: none;
   border: none;
-  color: #4E4E4E;
+  color: #4e4e4e;
   font-size: 1.2rem;
   cursor: pointer;
   padding: 0;
@@ -535,7 +525,7 @@
   padding: 0;
   background: none;
   border: none;
-  color: #4E4E4E;
+  color: #4e4e4e;
   font-size: 1.5rem;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -578,7 +568,6 @@
   position: relative;
 }
 
-
 .option-buttons {
   display: flex;
   justify-content: space-around;
@@ -599,7 +588,6 @@
 .transport-option:hover {
   background-color: #005bb5;
 }
-
 
 .add-transport-button {
   padding: 0;
@@ -623,7 +611,7 @@
   padding: 0;
   background: none;
   border: none;
-  color: #4E4E4E;
+  color: #4e4e4e;
   font-size: 1.5rem;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -632,7 +620,6 @@
 .delete-transport-button:hover {
   color: rgb(139, 139, 139);
 }
-
 
 .transport-table input {
   width: 100%;
@@ -667,7 +654,7 @@
 /* 숙소 정보 폼 스타일 */
 .accommodation-form {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -682,9 +669,9 @@
   margin-top: 20px; /* 테이블 셀 간의 경계선 없애기 */
 }
 
-.accommodation-table th{
+.accommodation-table th {
   background-color: #227bcf;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   font-weight: bold;
   color: #ffffff;
   text-align: left;
@@ -705,11 +692,10 @@
   box-sizing: border-box;
 }
 
-
 /* 짐 정보 폼 스타일 */
 .luggage-form {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -724,9 +710,9 @@
   margin-top: 20px; /* 테이블 셀 간의 경계선 없애기 */
 }
 
-.luggage-table th{
+.luggage-table th {
   background-color: #227bcf;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   font-weight: bold;
   color: #ffffff;
   text-align: left;
@@ -751,7 +737,7 @@
 /* 장바구니 폼 스타일 */
 .shopping-cart-form {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -766,9 +752,9 @@
   margin-top: 20px; /* 테이블 셀 간의 경계선 없애기 */
 }
 
-.shopping-cart-table th{
+.shopping-cart-table th {
   background-color: #227bcf;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   font-weight: bold;
   color: #ffffff;
   text-align: left;
@@ -790,7 +776,6 @@
   box-sizing: border-box;
 }
 
-
 /* 총 합계 표시 스타일 */
 .total-amount {
   text-align: right;
@@ -824,11 +809,10 @@
   color: #005bb5; /* 호버 시 더 진한 파란색 */
 }
 
-
 /* 티켓 폼 스타일 */
 .ticket-form {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -839,13 +823,13 @@
 
 .ticket-table {
   width: 100%;
-  border-collapse: collapse; 
+  border-collapse: collapse;
   margin-top: 20px;
 }
 
-.ticket-table th{
+.ticket-table th {
   background-color: #227bcf;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   font-weight: bold;
   color: #ffffff;
   text-align: left;
@@ -867,7 +851,6 @@
   box-sizing: border-box;
 }
 
-
 /* 총 합계 표시 스타일 */
 .total-amount {
   text-align: right;
@@ -901,11 +884,10 @@
   color: #005bb5; /* 호버 시 더 진한 파란색 */
 }
 
-
 /* 식당 폼 스타일 */
 .restaurant-form {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -920,9 +902,9 @@
   margin-top: 20px;
 }
 
-.restaurant-table th{
+.restaurant-table th {
   background-color: #227bcf;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   font-weight: bold;
   color: #ffffff;
   text-align: left;
@@ -942,7 +924,6 @@
   border: 1px solid #ddd;
   box-sizing: border-box;
 }
-
 
 /* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
 .form-actions {
@@ -972,7 +953,7 @@
 /* 비상연락처 폼 스타일 */
 .emergency-contact-form {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -987,9 +968,9 @@
   margin-top: 20px;
 }
 
-.emergency-contact-table th{
+.emergency-contact-table th {
   background-color: #227bcf;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   font-weight: bold;
   color: #ffffff;
   text-align: left;
@@ -1009,7 +990,6 @@
   border: 1px solid #ddd;
   box-sizing: border-box;
 }
-
 
 /* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
 .form-actions {
@@ -1036,11 +1016,10 @@
   color: #005bb5; /* 호버 시 더 진한 파란색 */
 }
 
-
 /* Budget Box 스타일 */
 .budget-form {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -1056,9 +1035,9 @@
   margin-top: 20px;
 }
 
-.budget-table th{
+.budget-table th {
   background-color: #227bcf;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   font-weight: bold;
   color: #ffffff;
   text-align: left;
@@ -1071,7 +1050,6 @@
   text-align: left;
   position: relative;
 }
-
 
 .budget-table input {
   width: 100%;
@@ -1117,7 +1095,7 @@
 /* Souvenir Box 스타일 */
 .souvenir-form {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -1133,9 +1111,9 @@
   margin-top: 20px;
 }
 
-.souvenir-table th{
+.souvenir-table th {
   background-color: #227bcf;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   font-weight: bold;
   color: #ffffff;
   text-align: left;
@@ -1148,7 +1126,6 @@
   text-align: left;
   position: relative;
 }
-
 
 .souvenir-table input {
   width: 100%;
@@ -1194,7 +1171,7 @@
 /* AllergyBox 스타일 */
 .allergy-box {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -1211,9 +1188,9 @@
   margin-top: 20px;
 }
 
-.allergy-table th{
+.allergy-table th {
   background-color: #227bcf;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   font-weight: bold;
   color: #ffffff;
   text-align: left;
@@ -1227,7 +1204,6 @@
   position: relative;
 }
 
-
 .allergy-table input {
   width: 100%;
   padding: 8px;
@@ -1235,7 +1211,6 @@
   border: 1px solid #ddd;
   box-sizing: border-box;
 }
-
 
 /* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
 .form-actions {
@@ -1262,11 +1237,10 @@
   color: #005bb5; /* 호버 시 더 진한 파란색 */
 }
 
-
 /* InsuranceBox 스타일 */
 .insurance-box {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -1283,9 +1257,9 @@
   margin-top: 20px;
 }
 
-.insurance-table th{
+.insurance-table th {
   background-color: #227bcf;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   font-weight: bold;
   color: #ffffff;
   text-align: left;
@@ -1299,7 +1273,6 @@
   position: relative;
 }
 
-
 .insurance-table input,
 .insurance-table select {
   width: 100%;
@@ -1308,7 +1281,6 @@
   border: 1px solid #ddd;
   box-sizing: border-box;
 }
-
 
 /* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
 .form-actions {
@@ -1335,7 +1307,6 @@
   color: #005bb5; /* 호버 시 더 진한 파란색 */
 }
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1350,7 +1321,7 @@
 /* SimCardBox 스타일 */
 .sim-card-box {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -1366,9 +1337,9 @@
   margin-top: 20px;
 }
 
-.sim-card-table th{
+.sim-card-table th {
   background-color: #227bcf;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   font-weight: bold;
   color: #ffffff;
   text-align: left;
@@ -1390,7 +1361,6 @@
   border: 1px solid #ddd;
   box-sizing: border-box;
 }
-
 
 /* 추가 행 버튼 및 삭제 폼 버튼 스타일 */
 .form-actions {
@@ -1417,11 +1387,10 @@
   color: #005bb5; /* 호버 시 더 진한 파란색 */
 }
 
-
 /* ExchangeBox 스타일 */
 .exchange-box {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -1437,9 +1406,9 @@
   margin-top: 20px;
 }
 
-.exchange-table th{
+.exchange-table th {
   background-color: #227bcf;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   font-weight: bold;
   color: #ffffff;
   text-align: left;
@@ -1485,11 +1454,10 @@
   color: #005bb5; /* 호버 시 더 진한 파란색 */
 }
 
-
 /* VisaBox 스타일 */
 .visa-box {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -1505,9 +1473,9 @@
   margin-top: 20px;
 }
 
-.visa-table th{
+.visa-table th {
   background-color: #227bcf;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   font-weight: bold;
   color: #ffffff;
   text-align: left;
@@ -1555,11 +1523,10 @@
   color: #005bb5;
 }
 
-
 /* MedicationBox 스타일 */
 .medication-box {
   background-color: #ffffff;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -1575,9 +1542,9 @@
   margin-top: 20px;
 }
 
-.medication-table th{
+.medication-table th {
   background-color: #227bcf;
-  border: 1px solid #166BBB;
+  border: 1px solid #166bbb;
   font-weight: bold;
   color: #ffffff;
   text-align: left;
@@ -1624,3 +1591,13 @@
   color: #005bb5;
 }
 
+.miscellaneous-box {
+  background-color: #ffffff;
+  border: 1px solid #166bbb;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 94.5%;
+  max-width: 800px;
+}
