@@ -13,13 +13,13 @@ export default function MiscellaneousBox({ onDelete }: { onDelete: () => void })
 
   const handleAddColumn = (column: string) => {
     setColumns([...columns, column]);
-    setRows(rows.map((row) => [...row, '']));
+    setRows(rows.map(row => [...row, '']));
     closeModal();
   };
 
   const deleteColumn = (colIndex: number) => {
     setColumns(columns.filter((_, index) => index !== colIndex));
-    setRows(rows.map((row) => row.filter((_, index) => index !== colIndex)));
+    setRows(rows.map(row => row.filter((_, index) => index !== colIndex)));
   };
 
   const addRow = () => {
@@ -45,9 +45,7 @@ export default function MiscellaneousBox({ onDelete }: { onDelete: () => void })
             {columns.map((col, colIndex) => (
               <th key={colIndex}>
                 {col}
-                <button className="delete-column-button" onClick={() => deleteColumn(colIndex)}>
-                  ✖︎
-                </button>
+                <button className="delete-column-button" onClick={() => deleteColumn(colIndex)}>✖︎</button>
               </th>
             ))}
           </tr>
@@ -57,10 +55,16 @@ export default function MiscellaneousBox({ onDelete }: { onDelete: () => void })
             <tr key={rowIndex}>
               {row.map((cell, colIndex) => (
                 <td key={colIndex}>
-                  <input type="text" value={cell} onChange={(e) => handleRowInputChange(rowIndex, colIndex, e.target.value)} placeholder="내용을 입력하세요" />
-                  <button className="delete-row-button" onClick={() => deleteRow(rowIndex)}>
-                    ✖︎
-                  </button>
+                  <input
+                    type="text"
+                    value={cell}
+                    onChange={(e) => handleRowInputChange(rowIndex, colIndex, e.target.value)}
+                    placeholder="내용을 입력하세요"
+                  />
+                  {/* 조건부로 마지막 열에만 x 버튼 표시 */}
+                  {colIndex === columns.length - 1 && (
+                    <button className="delete-row-button" onClick={() => deleteRow(rowIndex)}>✖︎</button>
+                  )}
                 </td>
               ))}
             </tr>
@@ -68,17 +72,17 @@ export default function MiscellaneousBox({ onDelete }: { onDelete: () => void })
         </tbody>
       </table>
       <div className="form-actions">
-        <button className="add-column-button" onClick={openModal}>
-          열 추가 +
-        </button>
-        <button className="add-row-button" onClick={addRow}>
-          행 추가 +
-        </button>
-        <button className="delete-form-button" onClick={onDelete}>
-          ✖︎
-        </button>
+        <button className="add-column-button1" onClick={openModal}>열 추가 +</button>
+        <button className="add-row-button1" onClick={addRow}>행 추가 +</button>
+        <button className="delete-form-button" onClick={onDelete}>✖︎</button>
       </div>
-      {isModalOpen && <CustomColumnModal isOpen={isModalOpen} onClose={closeModal} onAddColumn={handleAddColumn} />}
+      {isModalOpen && (
+        <CustomColumnModal
+          isOpen={isModalOpen}
+          onClose={closeModal}
+          onAddColumn={handleAddColumn}
+        />
+      )}
     </div>
   );
 }
