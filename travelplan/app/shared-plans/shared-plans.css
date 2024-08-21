@@ -402,6 +402,9 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
+  max-height: 400px; 
+  overflow-y: auto; 
+  text-align: center;
 }
 
 .transport-box {
@@ -413,6 +416,8 @@
   position: relative;
   width: 94.5%;
   text-align: center;
+  max-height: 400px; 
+  overflow-y: auto; 
 }
 
 /* 엑셀 스타일의 테이블 */
@@ -660,7 +665,9 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  overflow-x: auto; /* 표가 div 밖으로 나가지 않도록 스크롤 가능 설정 */
+  max-height: 400px; 
+  overflow-y: auto; 
+  text-align: center;
 }
 
 .accommodation-table {
@@ -701,7 +708,9 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  overflow-x: auto; /* 표가 div 밖으로 나가지 않도록 스크롤 가능 설정 */
+  max-height: 400px; 
+  overflow-y: auto; 
+  text-align: center;
 }
 
 .luggage-table {
@@ -743,7 +752,9 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  overflow-x: auto; /* 표가 div 밖으로 나가지 않도록 스크롤 가능 설정 */
+  max-height: 400px; 
+  overflow-y: auto; 
+  text-align: center;
 }
 
 .shopping-cart-table {
@@ -818,7 +829,9 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  overflow-x: auto; /* 표가 div 밖으로 나가지 않도록 스크롤 가능 설정 */
+  max-height: 400px; 
+  overflow-y: auto; 
+  text-align: center;
 }
 
 .ticket-table {
@@ -893,7 +906,9 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  overflow-x: auto; /* 표가 div 밖으로 나가지 않도록 스크롤 가능 설정 */
+  max-height: 400px; 
+  overflow-y: auto; 
+  text-align: center;
 }
 
 .restaurant-table {
@@ -959,7 +974,9 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  overflow-x: auto; /* 표가 div 밖으로 나가지 않도록 스크롤 가능 설정 */
+  max-height: 400px; 
+  overflow-y: auto; 
+  text-align: center;
 }
 
 .emergency-contact-table {
@@ -1026,6 +1043,9 @@
   position: relative;
   width: 95%;
   max-width: 800px;
+  max-height: 400px; 
+  overflow-y: auto; 
+  text-align: center;
 }
 
 /* 엑셀 스타일의 테이블 */
@@ -1102,6 +1122,9 @@
   position: relative;
   width: 95%;
   max-width: 800px;
+  max-height: 400px; 
+  overflow-y: auto; 
+  text-align: center;
 }
 
 /* 엑셀 스타일의 테이블 */
@@ -1179,6 +1202,8 @@
   text-align: center;
   width: 95%;
   max-width: 800px;
+  max-height: 400px; 
+  overflow-y: auto; 
 }
 
 /* 엑셀 스타일의 테이블 */
@@ -1248,6 +1273,8 @@
   text-align: center;
   width: 95%;
   max-width: 800px;
+  max-height: 400px; 
+  overflow-y: auto; 
 }
 
 /* 엑셀 스타일의 테이블 */
@@ -1328,6 +1355,9 @@
   position: relative;
   width: 94.5%; /* 다른 Box 컴포넌트들과 일치 */
   max-width: 800px;
+  max-height: 400px; 
+  overflow-y: auto; 
+  text-align: center;
 }
 
 /* 엑셀 스타일의 테이블 */
@@ -1397,6 +1427,9 @@
   position: relative;
   width: 94.5%;
   max-width: 800px;
+  max-height: 400px; 
+  overflow-y: auto; 
+  text-align: center;
 }
 
 /* 엑셀 스타일의 테이블 */
@@ -1464,6 +1497,9 @@
   position: relative;
   width: 94.5%;
   max-width: 800px;
+  max-height: 400px; 
+  overflow-y: auto; 
+  text-align: center;
 }
 
 /* 엑셀 스타일의 테이블 */
@@ -1533,6 +1569,9 @@
   position: relative;
   width: 94.5%;
   max-width: 800px;
+  max-height: 400px; 
+  overflow-y: auto; 
+  text-align: center;
 }
 
 /* 엑셀 스타일의 테이블 */
@@ -1600,6 +1639,9 @@
   position: relative;
   width: 94.5%;
   max-width: 800px;
+  max-height: 400px; 
+  overflow-y: auto; 
+  text-align: center;
 }
 
 .miscellaneous-table {
@@ -1616,6 +1658,7 @@
   text-align: left;
   padding: 10px;
   position: relative;
+  table-layout: fixed; 
 }
 
 .miscellaneous-table td {

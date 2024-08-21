@@ -45,7 +45,7 @@ export default function SharedPlans() {
       <div className="middle-content">
         <div className="ad-space left-ad-space">{/* 왼쪽 광고 배너 공간 */}</div>
         <div className="content">
-          <h1>공유계획 페이지</h1>
+          <h1>공유계획</h1>
           
           <EmailList emails={emails} onDelete={(email) => setEmailToDelete(email)} />
 
@@ -61,7 +61,7 @@ export default function SharedPlans() {
           <div className="button-container">
 
           <button className="location-button" onClick={() => setIsItemModalOpen(true)}>
-              항목 추가
+              여행 지역,국가 추가
             </button>
           </div>
           
