@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import FeatureSelectionModal from './FeatureSelectionModal';
 import TransportBox from './TransportBox';
-import PlaceBox from './PlaceBox';
+import LocationBox from './LocationBox';
 import AccommodationBox from './AccommodationBox';
 import LuggageBox from './LuggageBox';
 import ShoppingCartBox from './ShoppingCartBox';
@@ -43,7 +43,7 @@ export default function AddBox() {
     <div className="feature-container">
       {features.map(({ type, key }) =>
         type === '장소' ? (
-          <PlaceBox key={key} onDelete={() => deleteFeature(key)} />
+          <LocationBox key={key} onDelete={() => deleteFeature(key)} />
         ) : type === '숙소' ? (
           <AccommodationBox key={key} onDelete={() => deleteFeature(key)} />
         ) : type === '짐' ? (
