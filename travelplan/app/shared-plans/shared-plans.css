@@ -401,7 +401,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -414,7 +414,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   text-align: center;
   max-height: 400px;
   overflow-y: auto;
@@ -664,7 +664,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -707,7 +707,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -751,7 +751,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -828,7 +828,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -905,7 +905,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -973,7 +973,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -1041,7 +1041,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -1119,7 +1119,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -1197,7 +1197,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -1267,7 +1267,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -1349,7 +1349,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -1420,7 +1420,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -1489,7 +1489,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -1560,7 +1560,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -1629,7 +1629,7 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%;
+  width: 96.5%;
   max-height: 400px;
   overflow-y: auto;
   text-align: center;
@@ -1735,4 +1735,105 @@ input[type='text'] {
 
 .delete-column-button:hover {
   color: rgb(139, 139, 139);
+}
+
+/* 탭 바 스타일 */
+.tab-bar {
+  display: flex;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.tab-link {
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #333;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-link:hover {
+  background-color: #0070f3;
+  color: #fff;
+}
+
+/* shared-plans.css */
+
+/* 탭 바 스타일링 */
+.section-tabs {
+  display: flex;
+  flex-wrap: nowrap; /* 가로로 스크롤 가능하게 설정 */
+  gap: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto; /* 가로 스크롤 가능 */
+  white-space: nowrap; /* 탭 내용이 줄바꿈되지 않도록 설정 */
+}
+
+.section-tab {
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
+  flex-shrink: 0; /* 모든 버튼이 동일한 크기 유지 */
+}
+
+.section-tab:hover {
+  background-color: #d9d9d9;
+}
+
+/* Add any necessary adjustments for buttons or container below */
+
+
+
+.feature-section {
+  margin-bottom: 20px; /* 섹션 사이에 여백 추가 */
+  width: 100%; /* 섹션의 전체 너비를 유지 */
+}
+
+/* shared-plans.css */
+
+/* 화살표 버튼 스타일링 */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  background-color: #005bb5;
+}
+
+.scroll-to-top svg {
+  width: 24px;
+  height: 24px;
 }
