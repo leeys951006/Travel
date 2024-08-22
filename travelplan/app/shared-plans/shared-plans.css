@@ -8,8 +8,8 @@
 
 /* 상단 광고 배너 */
 .top-ad-space {
-  width: 100%;
-  height: 105px;
+  width: 728px;
+  height: 90px;
   background-color: #e0e0e0;
   margin-bottom: 20px;
 }
@@ -24,7 +24,7 @@
 
 /* 광고 배너 영역 */
 .ad-space {
-  width: 412px;
+  width: 160px;
   background-color: #f4f4f4;
   height: 100vh;
 }
@@ -39,7 +39,7 @@
 
 /* 콘텐츠 박스 */
 .content {
-  max-width: 800px;
+  max-width: 1200px;
   flex-grow: 1;
   padding: 20px;
   background-color: #fff;
@@ -402,8 +402,8 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  max-height: 400px; 
-  overflow-y: auto; 
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -416,8 +416,8 @@
   position: relative;
   width: 94.5%;
   text-align: center;
-  max-height: 400px; 
-  overflow-y: auto; 
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 /* 엑셀 스타일의 테이블 */
@@ -665,8 +665,8 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  max-height: 400px; 
-  overflow-y: auto; 
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -708,8 +708,8 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  max-height: 400px; 
-  overflow-y: auto; 
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -752,8 +752,8 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  max-height: 400px; 
-  overflow-y: auto; 
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -829,8 +829,8 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  max-height: 400px; 
-  overflow-y: auto; 
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -906,8 +906,8 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  max-height: 400px; 
-  overflow-y: auto; 
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -974,8 +974,8 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  max-height: 400px; 
-  overflow-y: auto; 
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -1041,10 +1041,9 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 95%;
-  max-width: 800px;
-  max-height: 400px; 
-  overflow-y: auto; 
+  width: 94.5%;
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -1120,10 +1119,9 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 95%;
-  max-width: 800px;
-  max-height: 400px; 
-  overflow-y: auto; 
+  width: 94.5%;
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -1199,11 +1197,10 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
+  width: 94.5%;
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
-  width: 95%;
-  max-width: 800px;
-  max-height: 400px; 
-  overflow-y: auto; 
 }
 
 /* 엑셀 스타일의 테이블 */
@@ -1270,11 +1267,10 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
+  width: 94.5%;
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
-  width: 95%;
-  max-width: 800px;
-  max-height: 400px; 
-  overflow-y: auto; 
 }
 
 /* 엑셀 스타일의 테이블 */
@@ -1353,10 +1349,9 @@
   border-radius: 8px;
   margin-bottom: 20px;
   position: relative;
-  width: 94.5%; /* 다른 Box 컴포넌트들과 일치 */
-  max-width: 800px;
-  max-height: 400px; 
-  overflow-y: auto; 
+  width: 94.5%;
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -1426,9 +1421,8 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  max-width: 800px;
-  max-height: 400px; 
-  overflow-y: auto; 
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -1496,9 +1490,8 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  max-width: 800px;
-  max-height: 400px; 
-  overflow-y: auto; 
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -1568,9 +1561,8 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  max-width: 800px;
-  max-height: 400px; 
-  overflow-y: auto; 
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -1638,9 +1630,8 @@
   margin-bottom: 20px;
   position: relative;
   width: 94.5%;
-  max-width: 800px;
-  max-height: 400px; 
-  overflow-y: auto; 
+  max-height: 400px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -1650,7 +1641,7 @@
   margin-top: 20px;
 }
 
-.miscellaneous-table th{
+.miscellaneous-table th {
   background-color: #227bcf;
   border: 1px solid #166bbb;
   font-weight: bold;
@@ -1658,7 +1649,7 @@
   text-align: left;
   padding: 10px;
   position: relative;
-  table-layout: fixed; 
+  table-layout: fixed;
 }
 
 .miscellaneous-table td {
@@ -1745,4 +1736,3 @@ input[type='text'] {
 .delete-column-button:hover {
   color: rgb(139, 139, 139);
 }
-
