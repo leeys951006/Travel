@@ -4,9 +4,15 @@
 import React, { useState } from 'react';
 import EmailInputModal from './EmailInputModal';
 
-export default function PlanModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+interface PlanModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onCreatePlan: (planName: string, emails: string[]) => void;
+}
+
+export default function PlanModal({ isOpen, onClose, onCreatePlan }: PlanModalProps) {
+  const [planName, setPlanName] = useState('');
   const [emails, setEmails] = useState<string[]>([]);
-  const [planName, setPlanName] = useState(''); // 계획 이름 상태 추가
   const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
 
   const handleOpenEmailModal = () => {
@@ -25,22 +31,26 @@ export default function PlanModal({ isOpen, onClose }: { isOpen: boolean; onClos
     setEmails((prevEmails) => prevEmails.filter(email => email !== emailToDelete));
   };
 
+  const handleCreate = () => {
+    if (planName && emails.length > 0) {
+      onCreatePlan(planName, emails);
+      onClose();
+    }
+  };
+
   if (!isOpen) return null;
 
   return (
     <div className="modal-overlay">
       <div className="modal-content">
         <h2>계획 추가</h2>
-        
-        {/* 계획 이름 입력란 추가 */}
         <input
-          className="plan-name-input"
           type="text"
           value={planName}
           onChange={(e) => setPlanName(e.target.value)}
           placeholder="공유 계획 이름을 지정해주세요"
+          className="modal-input"
         />
-        
         <div className="modal-box">
           <ul className="email-list">
             {emails.map((email, index) => (
@@ -51,12 +61,11 @@ export default function PlanModal({ isOpen, onClose }: { isOpen: boolean; onClos
             ))}
           </ul>
         </div>
-
         <div className="modal-buttons">
           <button className="modal-button email-add-button" onClick={handleOpenEmailModal}>이메일 추가</button>
-          <button className="modal-button invite-email-button">초대 이메일 발송</button>
+          <button className="modal-button invite-email-button" onClick={handleCreate}>초대 이메일 발송</button>
         </div>
-        <button className="modal-close-button" onClick={onClose}>✖︎</button>
+        <button className="modal-close-button" onClick={onClose}>닫기</button>
       </div>
 
       <EmailInputModal
