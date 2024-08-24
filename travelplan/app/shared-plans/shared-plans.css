@@ -1837,3 +1837,71 @@ input[type='text'] {
   width: 24px;
   height: 24px;
 }
+/* 전체 컨테이너 */
+.shared-plans-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 중간 콘텐츠 영역 */
+.middle-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* 메인 컨테이너 */
+.plans-container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-top: 20px;
+  height: 75%;
+}
+
+/* 각 계획 섹션 */
+.plan-section {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* 각 계획 제목 */
+.plan-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* 각 계획 박스 */
+.plan-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 80%;
+  height: 25vh;
+}
+
+/* 계획 추가 버튼 스타일 */
+.add-plan-button {
+  position: absolute;
+  top: 0; /* 버튼의 위치를 박스와 맞춤 */
+  right: -120px; /* 박스의 오른쪽에 위치 */
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-plan-button:hover {
+  background-color: #005bb5;
+}
+
+
