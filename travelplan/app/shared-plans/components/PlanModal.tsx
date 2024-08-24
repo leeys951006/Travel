@@ -6,6 +6,7 @@ import EmailInputModal from './EmailInputModal';
 
 export default function PlanModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   const [emails, setEmails] = useState<string[]>([]);
+  const [planName, setPlanName] = useState(''); // 계획 이름 상태 추가
   const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
 
   const handleOpenEmailModal = () => {
@@ -30,6 +31,16 @@ export default function PlanModal({ isOpen, onClose }: { isOpen: boolean; onClos
     <div className="modal-overlay">
       <div className="modal-content">
         <h2>계획 추가</h2>
+        
+        {/* 계획 이름 입력란 추가 */}
+        <input
+          className="plan-name-input"
+          type="text"
+          value={planName}
+          onChange={(e) => setPlanName(e.target.value)}
+          placeholder="공유 계획 이름을 지정해주세요"
+        />
+        
         <div className="modal-box">
           <ul className="email-list">
             {emails.map((email, index) => (
@@ -40,6 +51,7 @@ export default function PlanModal({ isOpen, onClose }: { isOpen: boolean; onClos
             ))}
           </ul>
         </div>
+
         <div className="modal-buttons">
           <button className="modal-button email-add-button" onClick={handleOpenEmailModal}>이메일 추가</button>
           <button className="modal-button invite-email-button">초대 이메일 발송</button>
@@ -50,7 +62,7 @@ export default function PlanModal({ isOpen, onClose }: { isOpen: boolean; onClos
       <EmailInputModal
         isOpen={isEmailModalOpen}
         onClose={handleCloseEmailModal}
-        onAddEmail={handleAddEmail} // 이 부분이 정상적으로 작동합니다.
+        onAddEmail={handleAddEmail}
       />
     </div>
   );
