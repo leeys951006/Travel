@@ -1,15 +1,12 @@
-// pages/page.tsx (또는 components/page.tsx)
 'use client';
 
 import './css/shared-plan.css';
 import { useState, useEffect } from 'react';
-import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import PlanModal from './components/PlanModal';
 import Plans from '../../components/Plans';
 
 export default function SharedPlans() {
-  const { data: session, status } = useSession();  
   const router = useRouter();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [plans, setPlans] = useState<{ name: string; emails: string[] }[]>([]);
@@ -29,14 +26,8 @@ export default function SharedPlans() {
   };
 
   useEffect(() => {
-    if (status === 'unauthenticated') {
-      router.push('/login'); 
-    }
-  }, [status, router]);
-
-  if (status === 'loading') {
-    return <div>로딩 중...</div>;  
-  }
+    // 로그인 상태 체크 로직 제거
+  }, []);
 
   return (
     <div className="shared-plans-container">
